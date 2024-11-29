@@ -67,7 +67,7 @@ data "template_file" "user_data" {
 # Create a compute instance
 resource "openstack_compute_instance_v2" "basic" {
   name      = "GNS3"
-  flavor_id = "3"
+  flavor_id = "2012"
   key_pair  = openstack_compute_keypair_v2.default.name
   user_data = data.template_file.user_data.rendered
   #security_groups = [openstack_networking_secgroup_v2.secgroup_ssh.name]
