@@ -2,7 +2,7 @@
 resource "openstack_blockstorage_volume_v3" "basic_volume" {
   name     = "gns3-main-vol"
   size     = 100
-  image_id = "a702f0cb-2081-416f-aff4-6969ddfba96c"   // do openstack image list to get a list of images
+  image_id = "op"   // do openstack image list to get a list of images
 }
 
 # Create a new SSH key pair
